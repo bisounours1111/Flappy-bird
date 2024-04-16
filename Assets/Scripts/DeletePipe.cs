@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class DeletePipe : MonoBehaviour
 {
-    public player player;
 
     void Start()
     {
@@ -23,7 +22,6 @@ public class DeletePipe : MonoBehaviour
         if (collision.gameObject.tag == "Pipe")
         {
             Destroy(collision.gameObject.transform.parent.gameObject);
-            player.AddScore(15);
         }
     }
 }
